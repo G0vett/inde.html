@@ -12,7 +12,63 @@
         .nav-pills .nav-link { color: white; background: #1e293b; margin-right: 10px; }
         .nav-pills .nav-link.active { background-color: #3b82f6; }
         .form-control { background: #1e293b; border: 1px solid #334155; color: white; }
-    </style>
+            /* Warna latar belakang utama (hitam pekat kebiruan) */
+        body { 
+            background-color: #0b0e11; 
+            color: #ffffff; 
+            font-family: 'Segoe UI', sans-serif; 
+        }
+
+        /* Kotak utama atau card */
+        .card-game { 
+            background: #1c1f26; 
+            border: 1px solid #2d323e; 
+            border-radius: 12px; 
+            color: white;
+            transition: 0.3s;
+        }
+
+        /* Efek saat kotak diamond disentuh/hover */
+        .card-game:hover { 
+            border-color: #3b82f6; /* Warna biru */
+            background: #252932;
+        }
+
+        /* Warna tombol Tab yang tidak aktif */
+        .nav-pills .nav-link { 
+            color: #94a3b8; 
+            background: #1c1f26; 
+            border: 1px solid #2d323e;
+            margin-right: 8px;
+            border-radius: 8px;
+        }
+
+        /* Warna tombol Tab saat aktif (Biru seperti contoh) */
+        .nav-pills .nav-link.active { 
+            background-color: #3b82f6 !important; 
+            color: white !important;
+            border: none;
+        }
+
+        /* Warna tulisan harga (Biru Muda/Cyan) */
+        .text-info { 
+            color: #60a5fa !important; 
+        }
+
+        /* Warna input User ID */
+        .form-control { 
+            background: #1c1f26; 
+            border: 1px solid #2d323e; 
+            color: white; 
+        }
+        
+        .form-control:focus {
+            background: #1c1f26;
+            color: white;
+            border-color: #3b82f6;
+            box-shadow: none;
+        }
+
 </head>
 <body>
 
@@ -46,6 +102,7 @@
             <div class="row g-3">
                 <div class="col-6 col-md-3">
                     <div class="card card-game p-3 text-center">
+                      <img src="https://gcdn.pbrd.co/images/JpL9yO0.png" width="40" class="mx-auto mb-2"> 
                         <small>5 Diamonds</small>
                         <b class="text_info">Rp 862</b>
                     </div>
