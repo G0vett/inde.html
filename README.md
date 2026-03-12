@@ -1,1 +1,81 @@
-# top-up
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Game Murah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .card-game { background: #1e293b; border: none; border-radius: 15px; cursor: pointer; transition: 0.3s; }
+        .card-game:hover { transform: translateY(-5px); background: #334155; }
+        .nav-pills .nav-link { color: white; background: #1e293b; margin-right: 10px; }
+        .nav-pills .nav-link.active { background-color: #3b82f6; }
+        .form-control { background: #1e293b; border: 1px solid #334155; color: white; }
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+    <h2 class="text-center mb-4">🚀 Store Top Up</h2>
+
+    <div class="card card-game p-4 mb-4">
+        <h5>1. Masukkan Data Akun</h5>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Masukkan User ID">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="(Server ID)">
+            </div>
+        </div>
+    </div>
+
+    <h5>2. Pilih Game</h5>
+    <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <button class="nav-link active" id="ml-tab" data-bs-toggle="pill" data-bs-target="#ml">Mobile Legends</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="ff-tab" data-bs-toggle="pill" data-bs-target="#ff">Free Fire</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="ml">
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="card card-game p-3 text-center">
+                        <small>86 Diamonds</small>
+                        <b class="text-info">Rp 20.500</b>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-game p-3 text-center">
+                        <small>172 Diamonds</small>
+                        <b class="text-info">Rp 41.000</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="ff">
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="card card-game p-3 text-center">
+                        <small>70 Diamonds</small>
+                        <b class="text-warning">Rp 9.500</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 d-grid">
+        <button class="btn btn-primary btn-lg" onclick="alert('Pesanan Diterima!')">Beli Sekarang</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
